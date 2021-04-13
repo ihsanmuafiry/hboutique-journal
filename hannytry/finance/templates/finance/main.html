@@ -1,0 +1,63 @@
+{% load static%}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+     <style>
+
+        #logo{
+		}
+
+		body{
+			background-color: #ebeff5;
+		}
+
+
+		#total-orders{
+
+			background-color: #7abecc;
+		}
+
+
+		#saldoAkhir{
+
+			background-color: #4cb4c7;
+			justify-content: center;
+		}
+
+		#orders-pending{
+			background-color: #7CD1C0;
+		}
+
+		#hapusList{
+			color: green;
+		}
+
+		.centered {
+		   position: fixed;
+		   top: 50%;
+           left: 50%;
+
+
+           transform: translate(-50%, -50%);
+        }
+
+    </style>
+    <title>
+        Hanny Boutique
+    </title>
+
+</head>
+
+<body>
+{% include 'finance/navbar.html' %}
+
+{% block body%}
+{%endblock%}
+
+</body>
+
+</html>

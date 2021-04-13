@@ -1,0 +1,19 @@
+{% extends 'finance/main.html' %}
+{%block body%}
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">Ubah transaksi</h5>
+
+    </div>
+    <div class="card-body">
+        <form method="POST">
+            {%csrf_token%}
+            {{form.as_p}}
+            <button type="submit" name="" id="" class="btn btn-success"> Ubah</button>
+        </form>
+    </div>
+</div>
+
+
+{%endblock%}

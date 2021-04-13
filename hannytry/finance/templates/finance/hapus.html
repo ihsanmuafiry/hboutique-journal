@@ -1,0 +1,16 @@
+{% extends 'finance/main.html' %}
+
+
+{% block body%}
+
+  <form method="POST">
+        {%csrf_token%}
+        <h3>Apakah anda ingin menghapus <a target="_blank" id="hapusList"> {{cf.desc}}</a>?</h3>
+        <button type="submit">Hapus</button>
+    </form>
+
+
+
+
+
+{%endblock%}
